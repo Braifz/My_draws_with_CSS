@@ -5,9 +5,11 @@
 }
 
 .container {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: rgb(54, 35, 12);
+  z-index: 101;
 }
 
 .profile {
@@ -22,6 +24,7 @@
   border-radius: 50%;
   background-color: rgb(109, 127, 128);
   border: 2px solid white;
+  box-shadow: 2px 2px 8px 2px rgba(253, 252, 252, 0.7);
 }
 
 .face {
@@ -31,7 +34,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
   background-color: rgb(228, 185, 177);
 }
 
@@ -42,7 +45,7 @@
   left: 50px;
   top: 50px;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 6;
   background-color: black;
 }
 
@@ -65,9 +68,8 @@
   position: relative;
   left: 98px;
   top: 20px;
-  height: 28px;
-  width: 16px;
-  background-color: rgb(192, 87, 87);
+  z-index: 182;
+  background-color: rgb(134, 32, 49);
   border-radius: 10px;
 }
 
@@ -79,4 +81,27 @@
   top: -25px;
   border-radius: 25px;
   border-bottom: 5px solid black;
+}
+
+.neck {
+  position: relative;
+  left: 127px;
+  top: 12px;
+  z-index: 101;
+  height: 35px;
+  width: 40px;
+  border-radius: 30%;
+  background-color: rgb(228, 185, 177);
+}
+
+.body {
+  position: relative;
+  left: 66px;
+  width: 160px;
+  height: 63px;
+  z-index: 100;
+  border-radius: 50%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: springgreen;
 }
